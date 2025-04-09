@@ -7,7 +7,7 @@ import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import Categories from "./pages/Categories";
 import '@fontsource/orbitron/700.css'
-
+import Cardd from "./components/Card";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "categories",
         element: <Categories/>,
+      },
+      {
+        path: "card",
+        element: <Cardd/>,
       },
     ],
   },
