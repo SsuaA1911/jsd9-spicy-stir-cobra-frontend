@@ -26,6 +26,7 @@ const Products = () => {
             >
               View Details
             </button>
+            
           </div>
         ))}
       </div>

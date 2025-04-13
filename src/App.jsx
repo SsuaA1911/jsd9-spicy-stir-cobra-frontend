@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./components/Layout";
+import Layout from "./components/common/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -7,7 +7,8 @@ import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import Categories from "./pages/Categories";
 import '@fontsource/orbitron/700.css'
-import Cardd from "./components/Card";
+import Cardd from "./components/common/Card";
+import LinearWithValueLabel from "./components/common/Loading";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
         path: "card",
         element: <Cardd/>,
       },
+      // {
+      //   path: "load",
+      //   element: <LinearWithValueLabel/>
+      // },
     ],
   },
 ]);

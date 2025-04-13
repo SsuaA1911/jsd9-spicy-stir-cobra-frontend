@@ -7,10 +7,12 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material';
 import { Link } from 'react-router';
+import LinearWithValueLabel from './Loading';
 
 export default function Cardd() {
     const cardProduct = styled.div
   return (
+ <div>
     <Card sx={{ maxWidth: 345,backgroundColor:"black",color:"white"  }}>
       <CardMedia
         sx={{ height: 140 }}
@@ -31,5 +33,11 @@ export default function Cardd() {
        <Link to={"/"}><Button size="small"sx={{backgroundColor:"white"}}>Learn More</Button></Link>
       </CardActions>
     </Card>
+     
+        <LinearWithValueLabel />
+     
+    </div>
+    
+    
   );
 }
